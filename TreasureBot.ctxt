@@ -1,6 +1,16 @@
 #BlueJ class context
-comment0.params=st\ av\ dir\ numBeepers
-comment0.target=TreasureBot(int,\ int,\ Direction,\ int)
-comment1.params=
-comment1.target=void\ findTreasure()
-numComments=2
+comment0.target=TreasureBot
+comment0.text=\r\n\ @author\ \:\ \ D.\ Appel\r\n
+comment1.params=st\ av\ dir\ numBeepers
+comment1.target=TreasureBot(int,\ int,\ Direction,\ int)
+comment2.params=
+comment2.target=void\ findTreasure()
+comment3.params=
+comment3.target=void\ faceNorth()
+comment4.params=
+comment4.target=void\ faceEast()
+comment5.params=
+comment5.target=void\ faceWest()
+comment6.params=
+comment6.target=void\ faceSouth()
+numComments=7
