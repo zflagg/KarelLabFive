@@ -7,7 +7,7 @@ import kareltherobot.*;
  */
 public class TreasureBot extends Robot
 {
-    public int beepers;
+    public int beepers = 0;
     
     public TreasureBot(int st, int av, Direction dir, int numBeepers) {
         super(st, av, dir, numBeepers);
@@ -25,41 +25,41 @@ public class TreasureBot extends Robot
             faceNorth();
             move();
         }
-        if (beepers%5 == 2 && !nextToABeeper()) {
+        else if (beepers%5 == 2 && !nextToABeeper()) {
             faceEast();
             move();
         }
-        if (beepers%5 == 3 && !nextToABeeper()) {
+        else if (beepers%5 == 3 && !nextToABeeper()) {
             faceSouth();
             move();
         }
-        if (beepers%5 == 4 && !nextToABeeper()) {
+        else if (beepers%5 == 4 && !nextToABeeper()) {
             faceWest();
             move();
         }
-        if (beepers%5 == 0) {
+        else {
             turnOff();
         }
         findTreasure();
     }
     
     public void faceNorth() {
-        if (!facingNorth()) {
+        while (!facingNorth()) {
             turnLeft();
         }
     }
     public void faceEast() {
-        if (!facingEast()) {
+        while (!facingEast()) {
             turnLeft();
         }
     }
     public void faceWest() {
-        if (!facingWest()) {
+        while (!facingWest()) {
             turnLeft();
         }
     }
     public void faceSouth() {
-        if (!facingSouth()) {
+        while (!facingSouth()) {
             turnLeft();
         }
     }
